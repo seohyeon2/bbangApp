@@ -22,6 +22,8 @@ struct Home: View {
                 TopBarButton(current: $current, title: "예약구매", animation: animation)
                 TopBarButton(current: $current, title: "기획전", animation: animation)
             }
+            
+            TopBarContent(current: current)
         }
     }
 }
