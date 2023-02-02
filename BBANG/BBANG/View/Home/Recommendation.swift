@@ -39,9 +39,9 @@ struct Banner: View {
             TabView(selection: $homeViewModel.currentBannerIndex) {
                 ForEach(bannerImages.indices, id: \.self) { index in
                     NavigationLink {
-//                        if homeViewModel.currentBannerIndex == 3 {
-//                            SavedPointView()
-//                        }
+                        if homeViewModel.currentBannerIndex == 3 {
+                            SavedPointView()
+                        }
                     } label: {
                         bannerImages[index]
                             .resizable()
@@ -187,17 +187,20 @@ struct CircleMenu: View {
             .padding([.leading, .trailing], 20)
             
             VStack {
-                Button {
-                    
+                
+                NavigationLink {
+                    SavedPointView()
                 } label: {
-                    Image("circleButtonPoint")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 35, height: 35)
+                    ZStack {
+                        Image("circleButtonPoint")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 35, height: 35)
+                    }
+                    .frame(width: 60, height: 60)
+                    .background(Color.yellow)
+                    .clipShape(Circle())
                 }
-                .frame(width: 60, height: 60)
-                .background(Color.yellow)
-                .clipShape(Circle())
                 
                 Text("포인트 적립")
                     .foregroundColor(.black)

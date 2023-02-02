@@ -10,7 +10,7 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     @Published var currentBannerIndex = 0
-    @Published private(set) var timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    @Published private(set) var timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
     private var bannerService = BannerService(state: Exhibition())
     
     func getCurrentBannerIndex(_ bannerImagesCount: Int) {
@@ -23,6 +23,6 @@ class HomeViewModel: ObservableObject {
     
     func restartTimer() {
         cancelTimer()
-        timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+        timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
     }
 }
