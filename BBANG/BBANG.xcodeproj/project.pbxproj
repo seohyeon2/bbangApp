@@ -11,14 +11,20 @@
 		056877CC298AC97F0068BEBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877CB298AC97F0068BEBC /* ContentView.swift */; };
 		056877CE298AC9800068BEBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056877CD298AC9800068BEBC /* Assets.xcassets */; };
 		056877D1298AC9800068BEBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056877D0298AC9800068BEBC /* Preview Assets.xcassets */; };
-		056877D9298AD25F0068BEBC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877D8298AD25F0068BEBC /* Home.swift */; };
-		056877DB298AD3370068BEBC /* TopBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877DA298AD3370068BEBC /* TopBarButton.swift */; };
+		056877D9298AD25F0068BEBC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877D8298AD25F0068BEBC /* HomeView.swift */; };
+		056877DB298AD3370068BEBC /* TopTapBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877DA298AD3370068BEBC /* TopTapBarButton.swift */; };
 		056877DE298AD3890068BEBC /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877DD298AD3890068BEBC /* NotificationBar.swift */; };
-		056877E0298AE10F0068BEBC /* TopBarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877DF298AE10F0068BEBC /* TopBarContent.swift */; };
-		056877E3298AE6650068BEBC /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877E2298AE6650068BEBC /* Recommendation.swift */; };
+		056877E0298AE10F0068BEBC /* TopTapBarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877DF298AE10F0068BEBC /* TopTapBarContent.swift */; };
+		056877E3298AE6650068BEBC /* RecommendationTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877E2298AE6650068BEBC /* RecommendationTapView.swift */; };
 		056877E8298BDA020068BEBC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877E7298BDA020068BEBC /* HomeViewModel.swift */; };
 		056877EA298BDF630068BEBC /* BannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877E9298BDF630068BEBC /* BannerService.swift */; };
 		056877EC298C182E0068BEBC /* SavedPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877EB298C182E0068BEBC /* SavedPointView.swift */; };
+		056877EF298C43DA0068BEBC /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877EE298C43DA0068BEBC /* UserView.swift */; };
+		056877F1298C45060068BEBC /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877F0298C45060068BEBC /* CommonView.swift */; };
+		056877F3298C45710068BEBC /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877F2298C45710068BEBC /* ProductListView.swift */; };
+		056877F5298C45DA0068BEBC /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877F4298C45DA0068BEBC /* LineView.swift */; };
+		056877F7298C46680068BEBC /* CircleButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877F6298C46680068BEBC /* CircleButtonsView.swift */; };
+		056877F9298C47020068BEBC /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056877F8298C47020068BEBC /* BannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,14 +33,20 @@
 		056877CB298AC97F0068BEBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		056877CD298AC9800068BEBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		056877D0298AC9800068BEBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		056877D8298AD25F0068BEBC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		056877DA298AD3370068BEBC /* TopBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarButton.swift; sourceTree = "<group>"; };
+		056877D8298AD25F0068BEBC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		056877DA298AD3370068BEBC /* TopTapBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTapBarButton.swift; sourceTree = "<group>"; };
 		056877DD298AD3890068BEBC /* NotificationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBar.swift; sourceTree = "<group>"; };
-		056877DF298AE10F0068BEBC /* TopBarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarContent.swift; sourceTree = "<group>"; };
-		056877E2298AE6650068BEBC /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		056877DF298AE10F0068BEBC /* TopTapBarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTapBarContent.swift; sourceTree = "<group>"; };
+		056877E2298AE6650068BEBC /* RecommendationTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTapView.swift; sourceTree = "<group>"; };
 		056877E7298BDA020068BEBC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		056877E9298BDF630068BEBC /* BannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerService.swift; sourceTree = "<group>"; };
 		056877EB298C182E0068BEBC /* SavedPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPointView.swift; sourceTree = "<group>"; };
+		056877EE298C43DA0068BEBC /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		056877F0298C45060068BEBC /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
+		056877F2298C45710068BEBC /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		056877F4298C45DA0068BEBC /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		056877F6298C46680068BEBC /* CircleButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonsView.swift; sourceTree = "<group>"; };
+		056877F8298C47020068BEBC /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,18 @@
 		056877DC298AD3440068BEBC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				056877D8298AD25F0068BEBC /* Home.swift */,
+				056877D8298AD25F0068BEBC /* HomeView.swift */,
 				056877DD298AD3890068BEBC /* NotificationBar.swift */,
-				056877DA298AD3370068BEBC /* TopBarButton.swift */,
-				056877DF298AE10F0068BEBC /* TopBarContent.swift */,
-				056877E2298AE6650068BEBC /* Recommendation.swift */,
+				056877DA298AD3370068BEBC /* TopTapBarButton.swift */,
+				056877DF298AE10F0068BEBC /* TopTapBarContent.swift */,
+				056877E2298AE6650068BEBC /* RecommendationTapView.swift */,
 				056877EB298C182E0068BEBC /* SavedPointView.swift */,
+				056877EE298C43DA0068BEBC /* UserView.swift */,
+				056877F0298C45060068BEBC /* CommonView.swift */,
+				056877F2298C45710068BEBC /* ProductListView.swift */,
+				056877F4298C45DA0068BEBC /* LineView.swift */,
+				056877F6298C46680068BEBC /* CircleButtonsView.swift */,
+				056877F8298C47020068BEBC /* BannerView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -187,14 +205,20 @@
 			files = (
 				056877CC298AC97F0068BEBC /* ContentView.swift in Sources */,
 				056877E8298BDA020068BEBC /* HomeViewModel.swift in Sources */,
-				056877DB298AD3370068BEBC /* TopBarButton.swift in Sources */,
-				056877D9298AD25F0068BEBC /* Home.swift in Sources */,
+				056877DB298AD3370068BEBC /* TopTapBarButton.swift in Sources */,
+				056877D9298AD25F0068BEBC /* HomeView.swift in Sources */,
 				056877CA298AC97F0068BEBC /* BBANGApp.swift in Sources */,
 				056877EC298C182E0068BEBC /* SavedPointView.swift in Sources */,
+				056877F7298C46680068BEBC /* CircleButtonsView.swift in Sources */,
 				056877DE298AD3890068BEBC /* NotificationBar.swift in Sources */,
-				056877E3298AE6650068BEBC /* Recommendation.swift in Sources */,
-				056877E0298AE10F0068BEBC /* TopBarContent.swift in Sources */,
+				056877E3298AE6650068BEBC /* RecommendationTapView.swift in Sources */,
+				056877E0298AE10F0068BEBC /* TopTapBarContent.swift in Sources */,
+				056877F3298C45710068BEBC /* ProductListView.swift in Sources */,
 				056877EA298BDF630068BEBC /* BannerService.swift in Sources */,
+				056877F9298C47020068BEBC /* BannerView.swift in Sources */,
+				056877EF298C43DA0068BEBC /* UserView.swift in Sources */,
+				056877F5298C45DA0068BEBC /* LineView.swift in Sources */,
+				056877F1298C45060068BEBC /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

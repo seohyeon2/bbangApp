@@ -1,5 +1,5 @@
 //
-//  AppBar.swift
+//  NotificationBar.swift
 //  BBANG
 //
 //  Created by seohyeon park on 2023/02/02.

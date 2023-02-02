@@ -1,12 +1,12 @@
 //
-//  TopBarButton.swift
+//  TopTapBarButton.swift
 //  BBANG
 //
 //  Created by seohyeon park on 2023/02/02.
 //
 
 import SwiftUI
-struct TopBarButton: View {
+struct TopTapBarButton: View {
     @Binding var current: String
     var title: String
     var animation: Namespace.ID
