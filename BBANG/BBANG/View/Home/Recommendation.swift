@@ -20,10 +20,10 @@ struct Banner: View {
     @State private var currentIndex = 0
     
     var bannerImages = [
-        Image("기획전"),
-        Image("검색"),
-        Image("예약구매"),
-        Image("포인트적립")
+        Image("banner1"),
+        Image("banner2"),
+        Image("banner3"),
+        Image("banner4")
     ]
     var body: some View {
         GeometryReader { proxy in
