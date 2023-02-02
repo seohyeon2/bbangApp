@@ -26,8 +26,7 @@ struct Recommendation: View {
 }
 
 struct Banner: View {
-    private let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
-    @State private var currentIndex = 0
+    @StateObject var homeViewModel = HomeViewModel()
     
     var bannerImages = [
         Image("banner1"),
@@ -37,18 +36,24 @@ struct Banner: View {
     ]
     var body: some View {
         GeometryReader { proxy in
-            TabView(selection: $currentIndex) {
+            TabView(selection: $homeViewModel.currentBannerIndex) {
                 ForEach(bannerImages.indices, id: \.self) { index in
-                    bannerImages[index]
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
+                    NavigationLink {
+//                        if homeViewModel.currentBannerIndex == 3 {
+//                            SavedPointView()
+//                        }
+                    } label: {
+                        bannerImages[index]
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    }
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .overlay (
                 HStack(spacing: 0) {
                     ForEach(0..<4) { index in
-                        if currentIndex == index {
+                        if homeViewModel.currentBannerIndex == index {
                             Rectangle()
                                 .fill(Color.white)
                                 .frame(height: 2)
@@ -63,10 +68,17 @@ struct Banner: View {
                 .padding(.bottom, 7)
                 ,alignment: .bottom
             )
-            .onReceive(timer) { _ in
+            
+            .onReceive(homeViewModel.timer) { _ in
                 withAnimation {
-                    currentIndex = currentIndex < bannerImages.count ? currentIndex + 1 : 0
+                    homeViewModel.getCurrentBannerIndex(bannerImages.count)
                 }
+            }
+            .onAppear {
+                self.homeViewModel.restartTimer()
+            }
+            .onDisappear {
+                homeViewModel.cancelTimer()
             }
         }
         .frame(height: 300)
